@@ -12,7 +12,7 @@ const PORT = 3100;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 // Registro de alumnos
 app.post('/registrar', (req, res) => {
